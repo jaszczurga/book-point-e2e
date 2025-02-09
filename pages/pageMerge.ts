@@ -5,6 +5,7 @@ import { profileFixture } from "./profile/profileFixture";
 import { navBarFixture } from "../components/navbar/navBarFixture";
 import {addBookFixture} from "./addBook/addBookFixture";
 import {bookDetailsFixture} from "./bookDetails/bookDetailsFixture";
+import {confirmBookDialogFixture} from "../components/confirmBookDialog/confirmBookFixture";
 
 export const baseMerge = mergeTests(
     homeFixture,
@@ -12,6 +13,7 @@ export const baseMerge = mergeTests(
     profileFixture,
     navBarFixture,
     addBookFixture,
-    bookDetailsFixture
+    bookDetailsFixture,
+    confirmBookDialogFixture,
 );
 export * from "@playwright/test";

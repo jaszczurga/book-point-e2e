@@ -4,15 +4,22 @@ import {Locator, Page} from "@playwright/test";
 export class BookDetails {
 
     readonly page: Page;
-    readonly continueButton: Locator;
+    readonly borrowButton: Locator;
+    readonly checkAvailabilityButton: Locator;
 
     public constructor(page: Page) {
         this.page = page;
-        this.continueButton = this.page.getByTestId("continue-button");
+        this.borrowButton = this.page.getByTestId("borrow-button");
+        this.checkAvailabilityButton = this.page.getByTestId("check-availability");
     }
 
-    public async clickContinueButton() {
-        await this.continueButton.click();
+    public async clickBorrowButton() {
+        await this.borrowButton.click();
     }
+
+    public async clickCheckAvailabilityButton() {
+        await this.checkAvailabilityButton.click();
+    }
+
 
 }
