@@ -20,6 +20,4 @@ export class BookDetails {
     public async clickCheckAvailabilityButton() {
         await this.checkAvailabilityButton.click();
     }
-
-
 }

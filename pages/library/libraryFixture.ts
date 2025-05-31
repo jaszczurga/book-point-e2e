@@ -1,5 +1,5 @@
 import {test as base} from "@playwright/test";
-import {Library} from "./Library";
+import {Library} from "./library";
 
 type Fixtures = {
     library: Library;
